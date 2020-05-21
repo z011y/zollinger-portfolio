@@ -214,7 +214,7 @@ const ResumeText = styled.h3`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   z-index: -5;
   margin-block-start: 0;
   margin-block-end: 0;

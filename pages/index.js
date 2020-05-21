@@ -71,7 +71,6 @@ const Button = styled.a`
   width: 260px;
   height: 75px;
   background: #ffffff;
-  filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.3));
   box-shadow: inset 0 0 0 0 #2f80ed;
   border-radius: 5px;
   font-size: 32px;
@@ -79,9 +78,26 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   transition: ease-out 0.4s;
+  position: relative;
 
   &:hover {
     /* transform: scale(1.05); */
     box-shadow: inset 400px 0 0 0 #2f80ed;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 75px;
+    background: #ffffff;
+    transition: ease-out 0.4s;
+    border-radius: 5px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   }
 `;
