@@ -16,17 +16,6 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@700&display=swap"
           rel="stylesheet"
         ></link>
-        <script id="mcjs">
-          !function(c,h,i,m,p)
-          {
-            ((m = c.createElement(h)),
-            (p = c.getElementsByTagName(h)[0]),
-            (m.async = 1),
-            (m.src = i),
-            p.parentNode.insertBefore(m, p))
-          }
-          (document,"script","https://chimpstatic.com/mcjs-connected/js/users/d8d55abb620ac085187e19ed6/cbb28caaffe9f292c18c51fb5.js");
-        </script>
       </Head>
 
       <Header>
