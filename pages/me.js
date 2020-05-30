@@ -2,8 +2,6 @@ import styled from "styled-components";
 import Link from "next/link";
 
 import Layout from "../components/layout";
-import LargeCircle from "../components/svg/large-circle";
-import MeIllustration from "../components/svg/me-illustration";
 
 const Me = () => {
   return (
@@ -17,11 +15,18 @@ const Me = () => {
           : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
           : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
           : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
-          : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
+          : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :
         </BackgroundColons>
-        <LargeCircleTopStyled />
-        <LargeCircleStyled />
-        <MeIllustrationStyled />
+        <LargeCircleTopStyled src="/large-circle.svg" />
+        <LargeCircleStyled src="/large-circle.svg" />
+        <MeIllustrationStyled src="/me-illustration.svg" />
         <Title>me</Title>
         <BioContainer>
           <h1>Cameron Zollinger</h1>
@@ -51,9 +56,8 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: -2;
-  position: relative;
   overflow: hidden;
+  position: relative;
 `;
 
 const BackgroundColons = styled.h1`
@@ -92,21 +96,21 @@ const BioContainer = styled.div`
   }
 `;
 
-const LargeCircleStyled = styled(LargeCircle)`
+const LargeCircleStyled = styled.img`
   position: absolute;
   right: -250px;
   bottom: -750px;
 `;
 
-const LargeCircleTopStyled = styled(LargeCircle)`
+const LargeCircleTopStyled = styled.img`
   position: absolute;
   right: -250px;
   top: -800px;
 `;
 
-const MeIllustrationStyled = styled(MeIllustration)`
+const MeIllustrationStyled = styled.img`
   position: absolute;
-  right: 80px;
+  right: 120px;
   bottom: 0;
   height: 96%;
 `;

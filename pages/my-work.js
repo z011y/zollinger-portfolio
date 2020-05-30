@@ -1,43 +1,47 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
 import Layout from "../components/layout";
-import SagaImg from "../public/saga.png";
-import TavernImg from "../public/tavern.png";
-import WeddingImg from "../public/wedding.png";
-import FoodiesImg from "../public/foodiesonfoot.png";
-import BirdImg from "../public/birdponchos.png";
+import Project from "../components/project";
 
 const MyWork = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("checked!");
-  };
-
   return (
     <Layout>
       <Content>
         <BackgroundWords>
           my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my workmy work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my workmy work my
           work my work my work my work my work my work my work my work my work
           my work my work my work my work my work my work my work my work my
           work my work my work my work my work my work my work my work my work
-          my workmy work my work my work my work my work my work my work my work
           my work my work my work my work my work my work my work my work my
           work my work my work my work my work my work my work my work my work
-          my work my work my workmy work my work my work my work my work my work
           my work my work my work my work my work my work my work my work my
           work my work my work my work my work my work my work my work my work
-          my work my work my work my work my workmy work my work my work my work
           my work my work my work my work my work my work my work my work my
-          work my work
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work my
+          work my work my work my work my work my work my work my work my work
+          my work my work my work my work my work my work my work my work
         </BackgroundWords>
         <Title>my work</Title>
 
@@ -52,31 +56,31 @@ const MyWork = () => {
         </FilterContainer>
 
         <WorkContainer>
-          <ProjectTitle>Saga</ProjectTitle>
-          <ProjectImage src={SagaImg} />
-          <ProjectDescription>
-            Where storytellers come together
-          </ProjectDescription>
-          <ProjectTitle>Tavern</ProjectTitle>
-          <ProjectImage src={TavernImg} />
-          <ProjectDescription>
-            Connecting local artists with local venues
-          </ProjectDescription>
-          <ProjectTitle>Wedding Site</ProjectTitle>
-          <ProjectImage src={WeddingImg} />
-          <ProjectDescription>
-            My fiance and I's wedding site
-          </ProjectDescription>
-          <ProjectTitle>Foodies on Foot</ProjectTitle>
-          <ProjectImage src={FoodiesImg} />
-          <ProjectDescription>
-            A food tour of Napa and Sonoma
-          </ProjectDescription>
-          <ProjectTitle>Bird Ponchos</ProjectTitle>
-          <ProjectImage src={BirdImg} />
-          <ProjectDescription>
-            An ecommerce site for stylish ponchos
-          </ProjectDescription>
+          <Project
+            title={"Saga"}
+            img={"/saga.png"}
+            description={"Where storytellers come together"}
+          />
+          <Project
+            title={"Tavern"}
+            img={"/tavern.png"}
+            description={"Connecting local artists with local venues"}
+          />
+          <Project
+            title={"Wedding Site"}
+            img={"/wedding.png"}
+            description={"My fiance and I's wedding site"}
+          />
+          <Project
+            title={"Foodies On Foot"}
+            img={"/foodiesonfoot.png"}
+            description={"A food tour in Napa, California"}
+          />
+          <Project
+            title={"Bird Ponchos"}
+            img={"/birdponchos.png"}
+            description={"An ecommerce site for stylish rain ponchos"}
+          />
         </WorkContainer>
       </Content>
     </Layout>
@@ -94,8 +98,8 @@ const Content = styled.div`
   align-items: flex-start;
   flex-direction: column;
   background-color: #2f80ed;
-  z-index: -2;
   position: relative;
+  z-index: -2;
 `;
 
 const BackgroundWords = styled.h1`
@@ -144,22 +148,4 @@ const WorkContainer = styled.div`
   margin-left: 140px;
   flex-direction: column;
   overflow: scroll;
-`;
-
-const ProjectTitle = styled.h1`
-  color: white;
-  margin-bottom: 20px;
-  font-size: 40px;
-`;
-
-const ProjectImage = styled.img`
-  width: 100%;
-  border-radius: 5px;
-`;
-
-const ProjectDescription = styled.p`
-  color: white;
-  font-family: "DM Mono", monospace;
-  font-size: 24px;
-  margin-bottom: 100px;
 `;

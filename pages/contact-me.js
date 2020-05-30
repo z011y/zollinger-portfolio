@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { useState } from "react";
 
 import Layout from "../components/layout";
-import LargeCircle from "../components/svg/large-circle";
+import ContactForm from "../components/contact-form";
 
-const MyInfo = () => {
+const ContactMe = () => {
   return (
     <Layout>
       <Content>
@@ -18,28 +19,27 @@ const MyInfo = () => {
           i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
           i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
           i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+          i i i i i i i i i i
         </BackgroundIs>
-        <LargeCircleStyled />
+        <LargeCircleStyled src="/large-circle.svg" />
         <ICorner />
-        <Title>my info</Title>
-        <Info>
-          <h3>
-            email: <span>cameron.ntc@gmail.com</span>
-          </h3>
-          <h3>
-            phone: <span>(541) 953-0737</span>
-          </h3>
-          <h3>
-            <span>Provo, UT</span>
-          </h3>
-        </Info>
+        <Title>contact</Title>
+        <ContactForm />
       </Content>
     </Layout>
   );
 };
 
-export default MyInfo;
+export default ContactMe;
 
 //STYLES_________________________
 const Content = styled.div`
@@ -49,9 +49,8 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: -2;
-  position: relative;
   overflow: hidden;
+  position: relative;
 `;
 
 const BackgroundIs = styled.h1`
@@ -74,9 +73,9 @@ const Title = styled.h1`
   z-index: 2;
 `;
 
-const LargeCircleStyled = styled(LargeCircle)`
+const LargeCircleStyled = styled.img`
   position: absolute;
-  top: -400px;
+  top: -300px;
   width: 65%;
 `;
 
@@ -88,20 +87,4 @@ const ICorner = styled.div`
   right: 0;
   background-color: #2f80ed;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
-`;
-
-const Info = styled.div`
-  height: 400px;
-  width: 600px;
-  position: absolute;
-  top: 200px;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  color: white;
-
-  span {
-    font-family: "DM Mono", monospace;
-    font-weight: 400;
-  }
 `;
