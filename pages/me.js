@@ -152,5 +152,6 @@ const BioText = styled.p`
   @media (max-width: 500px) {
     font-size: 15px;
     line-height: 20px;
+    padding-right: 30px;
   }
 `;

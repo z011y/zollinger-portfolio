@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 import MenuIcon from "../public/menu.svg";
+import CloseIcon from "../public/close.svg";
 import MobileNav from "./mobile-nav";
 
 const Hamburger = () => {
@@ -11,7 +12,7 @@ const Hamburger = () => {
   return (
     <>
       <Menu onClick={() => setOpen(!open)}>
-        <MenuIcon />
+        {open === true ? <CloseIcon /> : <MenuIcon />}
       </Menu>
       {open === true ? <MobileNav /> : null}
     </>

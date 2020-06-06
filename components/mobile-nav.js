@@ -25,7 +25,7 @@ export default MobileNav;
 //STYLES__________________________
 const NavContainer = styled.div`
   height: 100%;
-  width: 150px;
+  width: 200px;
   background-color: white;
   position: fixed;
   right: 0;
@@ -40,7 +40,6 @@ const NavContainer = styled.div`
 
 const NavLink = styled.a`
   color: black;
-  margin-right: 50px;
   font-size: 24px;
   padding: 10px;
   border-radius: 5px;
