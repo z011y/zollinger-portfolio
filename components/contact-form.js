@@ -151,6 +151,7 @@ const InfoForm = styled.form`
   @media (max-width: 500px) {
     width: 280px;
     left: 75px;
+    height: 450px;
   }
 `;
 
@@ -166,7 +167,7 @@ const Input = styled.input`
   height: 40px;
   filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.1));
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
 
   &:active,
   &:focus {
@@ -179,14 +180,14 @@ const Textarea = styled.textarea`
   border-radius: 5px;
   border: 1px hidden black;
   height: 80px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.1));
   transition: 0.25s ease-in-out;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
 
   &:active,
   &:focus {
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.2));
     outline: none;
   }
 `;
