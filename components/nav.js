@@ -64,6 +64,11 @@ const Logo = styled.a`
   span {
     color: #2f80ed;
   }
+
+  @media (max-width: 550px) {
+    font-size: 32px;
+    left: 20px;
+  }
 `;
 
 const LogoWork = styled(Logo)`
@@ -73,6 +78,11 @@ const LogoWork = styled(Logo)`
   border-radius: 5px;
   top: 15px;
   left: 65px;
+
+  @media (max-width: 550px) {
+    font-size: 32px;
+    left: 20px;
+  }
 `;
 
 const NavLink = styled.a`
@@ -87,6 +97,10 @@ const NavLink = styled.a`
     background-color: white;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
     color: black;
+  }
+
+  @media (max-width: 800px) {
+    display: none;
   }
 `;
 

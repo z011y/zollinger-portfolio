@@ -78,14 +78,21 @@ const Title = styled.h1`
   top: 90px;
   position: absolute;
   z-index: 2;
+
+  @media (max-width: 600px) {
+    left: 75px;
+    font-size: 70px;
+  }
+  @media (max-width: 400px) {
+    font-size: 60px;
+  }
 `;
 
 const BioContainer = styled.div`
   position: absolute;
   width: 500px;
   height: 500px;
-  left: 115px;
-  top: 205px;
+
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   background-color: white;
   padding: 20px;
@@ -93,6 +100,24 @@ const BioContainer = styled.div`
 
   span {
     color: #2f80ed;
+  }
+
+  @media (min-width: 1170px) {
+    left: 115px;
+    top: 205px;
+  }
+
+  @media (max-width: 650px) {
+    width: 400px;
+    height: 600px;
+  }
+
+  @media (max-width: 500px) {
+    height: 100%;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 200px;
   }
 `;
 
@@ -113,10 +138,19 @@ const MeIllustrationStyled = styled.img`
   right: 120px;
   bottom: 0;
   height: 96%;
+
+  @media (max-width: 1170px) {
+    display: none;
+  }
 `;
 
 const BioText = styled.p`
   font-family: "DM Mono", monospace;
   font-size: 20px;
   line-height: 35px;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
 `;

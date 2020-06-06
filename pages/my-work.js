@@ -122,6 +122,13 @@ const Title = styled.h1`
   top: 90px;
   position: absolute;
   z-index: 2;
+  @media (max-width: 600px) {
+    left: 75px;
+    font-size: 70px;
+  }
+  @media (max-width: 400px) {
+    font-size: 60px;
+  }
 `;
 
 const FilterContainer = styled.div`
@@ -136,6 +143,14 @@ const FilterContainer = styled.div`
   z-index: 100;
   padding: 30px;
   color: white;
+
+  @media (max-width: 1200px) {
+    right: 50px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const WorkContainer = styled.div`
@@ -148,4 +163,12 @@ const WorkContainer = styled.div`
   margin-left: 140px;
   flex-direction: column;
   overflow: scroll;
+
+  @media (max-width: 1000px) {
+    width: 75%;
+  }
+  @media (max-width: 600px) {
+    width: 75%;
+    margin-left: 75px;
+  }
 `;

@@ -76,6 +76,7 @@ const SocialsAll = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 1000;
 
   a {
     display: flex;

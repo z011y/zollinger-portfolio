@@ -45,6 +45,11 @@ const ResumeText = styled.h3`
   padding-left: 20px;
   transition: 0.25s ease-in-out;
   overflow: hidden;
+
+  @media (max-width: 550px) {
+    bottom: 20px;
+    right: 20px;
+  }
 `;
 
 const ResumeIcon = styled.a`
@@ -63,5 +68,10 @@ const ResumeIcon = styled.a`
   svg {
     width: 40%;
     color: #2f80ed;
+  }
+
+  @media (max-width: 550px) {
+    bottom: 20px;
+    right: 20px;
   }
 `;

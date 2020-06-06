@@ -63,21 +63,34 @@ const ContactForm = () => {
   return (
     <>
       <InfoForm onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email</label>
-        <Input
-          id="email"
-          type="email"
-          onChange={handleOnChange}
-          required
-          value={inputs.email}
-        />
-        <label htmlFor="message">Message</label>
-        <Textarea
-          id="message"
-          onChange={handleOnChange}
-          required
-          value={inputs.message}
-        />
+        <Title>
+          <b style={{ color: "#2f80ed", fontSize: 20, fontFamily: "DM Sans" }}>
+            I'm available for hire!
+          </b>
+          <br />
+          Freelance === <span style={{ color: "green" }}>true</span>
+          <br />
+          Full-time === <span style={{ color: "green" }}>true</span>
+        </Title>
+        <Email>
+          <label htmlFor="email">Email</label>
+          <Input
+            id="email"
+            type="email"
+            onChange={handleOnChange}
+            required
+            value={inputs.email}
+          />
+        </Email>
+        <Message>
+          <label htmlFor="message">Message</label>
+          <Textarea
+            id="message"
+            onChange={handleOnChange}
+            required
+            value={inputs.message}
+          />
+        </Message>
         <Button type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
@@ -85,13 +98,19 @@ const ContactForm = () => {
               : "Submitted"
             : "Submitting..."}
         </Button>
+        <Result>
+          {status.info.error && (
+            <div className="error" style={{ color: "red" }}>
+              Error: {"Oops! Your email did not send."}
+            </div>
+          )}
+          {!status.info.error && status.info.msg && (
+            <div className="success" style={{ color: "green" }}>
+              {"Your email was sent successfully!"}
+            </div>
+          )}
+        </Result>
       </InfoForm>
-      {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
-      )}
-      {!status.info.error && status.info.msg && (
-        <div className="success">{status.info.msg}</div>
-      )}
     </>
   );
 };
@@ -100,17 +119,16 @@ export default ContactForm;
 
 //STYLES__________________________
 const InfoForm = styled.form`
-  height: 400px;
+  height: 500px;
   width: 600px;
   position: absolute;
   top: 30%;
   font-size: 18px;
   text-align: left;
-  display: grid;
-  grid-template-rows: 25px 40px 25px 80px 50px;
-  grid-gap: 20px;
-  align-content: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-around;
   background-color: white;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -121,13 +139,27 @@ const InfoForm = styled.form`
     font-family: "DM Mono", monospace;
     font-weight: 400;
   }
+
+  @media (max-width: 650px) {
+    width: 400px;
+    height: 600px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 18px;
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
 `;
 
 const Input = styled.input`
   border-radius: 5px;
   border: 1px hidden black;
   height: 40px;
-  width: 500px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   padding: 10px;
   font-size: 14px;
@@ -143,7 +175,6 @@ const Textarea = styled.textarea`
   border-radius: 5px;
   border: 1px hidden black;
   height: 80px;
-  width: 500px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   transition: 0.25s ease-in-out;
   padding: 10px;
@@ -158,7 +189,6 @@ const Textarea = styled.textarea`
 
 const Button = styled.button`
   font-family: "DM Mono", monospace !important;
-  width: 100px;
   height: 50px;
   background: #ffffff;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
@@ -179,4 +209,20 @@ const Button = styled.button`
   &:active {
     outline: none;
   }
+`;
+
+const Result = styled.div`
+  height: 40px;
+  width: 500px;
+  font-size: 14px;
+`;
+
+const Email = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Message = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

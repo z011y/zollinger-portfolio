@@ -9,29 +9,18 @@ const ContactMe = () => {
   return (
     <Layout>
       <Content>
-        <BackgroundIs>
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
-          i i i i i i i i i i
-        </BackgroundIs>
-        <LargeCircleStyled src="/large-circle.svg" />
-        <ICorner />
+        <Background>
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+          @ @ @ @ @ @ @ @ @
+        </Background>
         <Title>contact</Title>
         <ContactForm />
       </Content>
@@ -53,7 +42,7 @@ const Content = styled.div`
   position: relative;
 `;
 
-const BackgroundIs = styled.h1`
+const Background = styled.h1`
   font-size: 72px;
   color: #e5effd;
   line-height: 110px;
@@ -71,20 +60,12 @@ const Title = styled.h1`
   top: 90px;
   position: absolute;
   z-index: 2;
-`;
 
-const LargeCircleStyled = styled.img`
-  position: absolute;
-  top: -300px;
-  width: 65%;
-`;
-
-const ICorner = styled.div`
-  width: 200px;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #2f80ed;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  @media (max-width: 600px) {
+    left: 75px;
+    font-size: 70px;
+  }
+  @media (max-width: 400px) {
+    font-size: 60px;
+  }
 `;

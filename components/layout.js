@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Socials from "./socials";
 import Nav from "./nav";
 import Resume from "./resume";
+import Hamburger from "./hamburger";
 
 export default function Layout({ children }) {
   return (
@@ -25,6 +26,7 @@ export default function Layout({ children }) {
       <main>
         <Socials />
         <Resume />
+        <Hamburger />
         {children}
       </main>
 

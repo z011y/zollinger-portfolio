@@ -8,7 +8,10 @@ export default function Home() {
   return (
     <Layout>
       <Content>
-        <BackgroundName>cameron zollinger cameron zollinger</BackgroundName>
+        <BackgroundName>
+          cameron zollinger cameron zollinger cameron zollinger cameron
+          zollinger cameron zollinger cameron zollinger
+        </BackgroundName>
         <Description>
           a full stack web developer w/
           <br />a <Highlight>design-minded</Highlight> approach to development
@@ -30,6 +33,7 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 `;
 
 const BackgroundName = styled.h1`
@@ -40,6 +44,12 @@ const BackgroundName = styled.h1`
   left: 75px;
   line-height: 240px;
   z-index: -100;
+  text-overflow: none;
+
+  @media (max-width: 550px) {
+    font-size: 150px;
+    line-height: 140px;
+  }
 `;
 
 const Highlight = styled.span`
@@ -60,9 +70,9 @@ const Description = styled.h2`
     font-size: 50px;
   }
 
-  @media (max-width: 803px) {
-    font-size: 30px;
-    width: 70%;
+  @media (max-width: 550px) {
+    font-size: 32px;
+    margin-right: 10px;
   }
 `;
 
@@ -99,5 +109,16 @@ const Button = styled.a`
     transition: ease-out 0.4s;
     border-radius: 5px;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+    width: 180px;
+    height: 50px;
+
+    &::before {
+      width: 180px;
+      height: 50px;
+    }
   }
 `;
