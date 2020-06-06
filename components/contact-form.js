@@ -142,11 +142,15 @@ const InfoForm = styled.form`
 
   @media (max-width: 650px) {
     width: 400px;
-    height: 600px;
+    height: 550px;
+  }
+  @media (max-width: 600px) {
+    top: 25%;
   }
 
   @media (max-width: 500px) {
-    width: 300px;
+    width: 250px;
+    left: 75px;
   }
 `;
 
