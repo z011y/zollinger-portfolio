@@ -165,30 +165,30 @@ const Input = styled.input`
   border-radius: 5px;
   border: 1px hidden black;
   height: 40px;
-  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.1));
+  border: 2px solid #e5effd;
   padding: 10px;
   font-size: 16px;
+  transition: 0.25s ease-in-out;
 
   &:active,
   &:focus {
-    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.2));
+    border: 2px solid #2f80ed;
     outline: none;
   }
 `;
 
 const Textarea = styled.textarea`
   border-radius: 5px;
-  border: 1px hidden black;
+  border: 2px solid #e5effd;
   height: 80px;
-  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.1));
   transition: 0.25s ease-in-out;
   padding: 10px;
   font-size: 16px;
 
   &:active,
   &:focus {
-    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.2));
     outline: none;
+    border: 2px solid #2f80ed;
   }
 `;
 
