@@ -170,6 +170,7 @@ const Input = styled.input`
   font-size: 16px;
   transition: 0.25s ease-in-out;
 
+  &:select,
   &:active,
   &:focus {
     border: 2px solid #2f80ed;
@@ -185,6 +186,7 @@ const Textarea = styled.textarea`
   padding: 10px;
   font-size: 16px;
 
+  &:select,
   &:active,
   &:focus {
     outline: none;

@@ -113,6 +113,10 @@ const BackgroundWords = styled.h1`
   padding-right: 75px;
   padding-left: 75px;
   z-index: -1;
+  @media (max-width: 448px) {
+    font-size: 60px;
+    padding-right: 25px;
+  }
 `;
 
 const Title = styled.h1`
