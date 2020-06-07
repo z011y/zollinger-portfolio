@@ -1,11 +1,13 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const Project = ({ title, img, description }) => {
+const Project = ({ title, link, img, description }) => {
   return (
     <>
       <ProjectTitle>{title}</ProjectTitle>
-      <ProjectImage src={img} />
+      <ProjectLink href={link} target="blank">
+        <ProjectImage src={img} />
+      </ProjectLink>
       <ProjectDescription>{description}</ProjectDescription>
     </>
   );
@@ -20,9 +22,24 @@ const ProjectTitle = styled.h1`
   font-size: 40px;
 `;
 
+const ProjectLink = styled.a`
+  position: relative;
+  z-index: 1000;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 const ProjectImage = styled.img`
   width: 100%;
   border-radius: 5px;
+  position: relative;
+  z-index: 1000;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ProjectDescription = styled.p`
