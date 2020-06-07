@@ -169,6 +169,7 @@ const Input = styled.input`
   padding: 10px;
   font-size: 16px;
   transition: 0.25s ease-in-out;
+  -webkit-appearance: none;
 
   &:select,
   &:active,
@@ -185,6 +186,7 @@ const Textarea = styled.textarea`
   transition: 0.25s ease-in-out;
   padding: 10px;
   font-size: 16px;
+  -webkit-appearance: none;
 
   &:select,
   &:active,
