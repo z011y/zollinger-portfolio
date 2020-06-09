@@ -171,7 +171,6 @@ const Input = styled.input`
   transition: 0.25s ease-in-out;
   -webkit-appearance: none;
 
-  &:select,
   &:active,
   &:focus {
     border: 2px solid #2f80ed;
@@ -188,7 +187,6 @@ const Textarea = styled.textarea`
   font-size: 16px;
   -webkit-appearance: none;
 
-  &:select,
   &:active,
   &:focus {
     outline: none;
