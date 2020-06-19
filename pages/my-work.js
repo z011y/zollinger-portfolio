@@ -72,7 +72,7 @@ const MyWork = () => {
           />
           <Project
             title={"Wedding Site"}
-            link={"#"}
+            link={"https://cameronandnicole.com"}
             img={"/wedding.png"}
             description={"My fiance and I's wedding site"}
           />
@@ -87,6 +87,12 @@ const MyWork = () => {
             link={"https://birdponchos.now.sh"}
             img={"/birdponchos.png"}
             description={"An ecommerce site for stylish rain ponchos"}
+          />
+          <Project
+            title={"Pittsburg Seafood Festival"}
+            link={"https://www.pittsburgseafoodandmusicfestival.com/"}
+            img={"/pittsburgfestival.png"}
+            description={"An event site for the Pittsburg Chamber of Commerce"}
           />
         </WorkContainer>
       </Content>
