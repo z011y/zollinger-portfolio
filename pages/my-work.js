@@ -66,7 +66,7 @@ const MyWork = () => {
           />
           <Project
             title={"Tavern"}
-            link={"https://tavernmusic.now.sh"}
+            link={"https://tavern-front-end.vercel.app"}
             img={"/tavern.png"}
             description={"Connecting local artists with local venues"}
             target="blank"
