@@ -60,7 +60,7 @@ const MyWork = () => {
         <WorkContainer>
           <Project
             title={"Saga"}
-            link={"#"}
+            link={"https://saga-front-end.vercel.app"}
             img={"/saga.png"}
             description={"Where storytellers come together"}
           />
@@ -69,30 +69,35 @@ const MyWork = () => {
             link={"https://tavernmusic.now.sh"}
             img={"/tavern.png"}
             description={"Connecting local artists with local venues"}
+            target="blank"
           />
           <Project
             title={"Wedding Site"}
             link={"https://cameronandnicole.com"}
             img={"/wedding.png"}
             description={"My fiance and I's wedding site"}
+            target="blank"
           />
           <Project
             title={"Foodies On Foot"}
             link={"https://foodies-on-foot.now.sh"}
             img={"/foodiesonfoot.png"}
             description={"A food tour in Napa, California"}
+            target="blank"
           />
           <Project
             title={"Bird Ponchos"}
             link={"https://birdponchos.now.sh"}
             img={"/birdponchos.png"}
             description={"An ecommerce site for stylish rain ponchos"}
+            target="blank"
           />
           <Project
             title={"Pittsburg Seafood Festival"}
             link={"https://www.pittsburgseafoodandmusicfestival.com/"}
             img={"/pittsburgfestival.png"}
             description={"An event site for the Pittsburg Chamber of Commerce"}
+            target="blank"
           />
         </WorkContainer>
       </Content>
