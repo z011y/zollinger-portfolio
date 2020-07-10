@@ -21,7 +21,6 @@ const ContactMe = () => {
           @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
           @ @ @ @ @ @ @ @ @
         </Background>
-        <Title>contact</Title>
         <ContactForm />
       </Content>
     </Layout>
@@ -44,28 +43,21 @@ const Content = styled.div`
 
 const Background = styled.h1`
   font-size: 72px;
-  color: #e5effd;
+  color: rgb(73, 144, 239);
+  background-color: #2f80ed;
   line-height: 110px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   padding-right: 75px;
   padding-left: 75px;
   z-index: -100;
-`;
-
-const Title = styled.h1`
-  font-size: 86px;
-  left: 135px;
-  top: 90px;
-  position: absolute;
-  z-index: 2;
+  overflow: hidden;
 
   @media (max-width: 600px) {
-    left: 75px;
-    font-size: 70px;
+    font-size: 60px;
   }
   @media (max-width: 400px) {
-    font-size: 60px;
+    color: #2f80ed;
   }
 `;

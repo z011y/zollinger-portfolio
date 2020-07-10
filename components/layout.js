@@ -49,7 +49,7 @@ const Header = styled.header`
   align-items: flex-end;
   display: flex;
   padding-right: 75px;
-  z-index: 1000;
+  z-index: 1002;
 `;
 
 // const Footer = styled.footer`

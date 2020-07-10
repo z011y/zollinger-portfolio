@@ -63,15 +63,12 @@ const ContactForm = () => {
   return (
     <>
       <InfoForm onSubmit={handleOnSubmit}>
-        <Title>
+        <Title>contact me</Title>
+        <Subtitle>
           <b style={{ color: "#2f80ed", fontSize: 20, fontFamily: "DM Sans" }}>
             I'm available for hire!
           </b>
-          <br />
-          Freelance === <span style={{ color: "green" }}>true</span>
-          <br />
-          Full-time === <span style={{ color: "green" }}>true</span>
-        </Title>
+        </Subtitle>
         <Email>
           <label htmlFor="email">Email</label>
           <Input
@@ -122,7 +119,7 @@ const InfoForm = styled.form`
   height: 500px;
   width: 600px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   font-size: 18px;
   text-align: left;
   display: flex;
@@ -156,6 +153,19 @@ const InfoForm = styled.form`
 `;
 
 const Title = styled.h1`
+  font-size: 50px;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
+`;
+
+const Subtitle = styled.h1`
   font-size: 18px;
   font-family: "DM Mono", monospace;
   font-weight: 400;
@@ -165,7 +175,7 @@ const Input = styled.input`
   border-radius: 5px;
   border: 1px hidden black;
   height: 40px;
-  border: 2px solid #e5effd;
+  border: 3px solid black;
   padding: 10px;
   font-size: 16px;
   transition: 0.25s ease-in-out;
@@ -173,14 +183,14 @@ const Input = styled.input`
 
   &:active,
   &:focus {
-    border: 2px solid #2f80ed;
+    border: 3px solid #2f80ed;
     outline: none;
   }
 `;
 
 const Textarea = styled.textarea`
   border-radius: 5px;
-  border: 2px solid #e5effd;
+  border: 3px solid black;
   height: 80px;
   transition: 0.25s ease-in-out;
   padding: 10px;
@@ -190,7 +200,7 @@ const Textarea = styled.textarea`
   &:active,
   &:focus {
     outline: none;
-    border: 2px solid #2f80ed;
+    border: 3px solid #2f80ed;
   }
 `;
 

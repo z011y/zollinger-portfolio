@@ -37,8 +37,8 @@ const Me = () => {
             Hi, I'm Cameron Zollinger, a full stack web developer. I'm
             passionate about great code and minimalist design. I love to create,
             and web development gives me the freedom to create anything I want.
-            My technology stack of choice is React and Python, but I'm a quick
-            learner and I'm excited to continue expanding my knowledge.
+            I'm a quick learner and I'm excited to continue expanding my
+            knowledge.
           </BioText>
         </BioContainer>
       </Content>
@@ -92,7 +92,6 @@ const BioContainer = styled.div`
   position: absolute;
   width: 500px;
   height: 500px;
-
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   background-color: white;
   padding: 20px;
@@ -151,7 +150,7 @@ const BioText = styled.p`
 
   @media (max-width: 500px) {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 30px;
     padding-right: 30px;
   }
 `;

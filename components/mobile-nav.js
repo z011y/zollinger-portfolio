@@ -30,7 +30,7 @@ const NavContainer = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 1005;
   transition: 0.25s ease-in-out;
   display: flex;
   flex-direction: column;

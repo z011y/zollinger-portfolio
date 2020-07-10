@@ -8,24 +8,24 @@ const Nav = () => {
   return (
     <>
       <Link href="/" passHref>
-        {router.pathname === "/my-work" ? (
-          <LogoWork>:zollinger</LogoWork>
+        {router.pathname === "/contact-me" ? (
+          <LogoDark>:zollinger</LogoDark>
         ) : (
           <Logo>
             <span>:</span>zollinger
           </Logo>
         )}
       </Link>
-      {router.pathname === "/my-work" ? (
+      {router.pathname === "/contact-me" ? (
         <>
           <Link href="/me" passHref>
-            <NavLinkWork>me</NavLinkWork>
+            <NavLinkDark>me</NavLinkDark>
           </Link>
           <Link href="/my-work" passHref>
-            <NavLinkWork>my work</NavLinkWork>
+            <NavLinkDark>my work</NavLinkDark>
           </Link>
           <Link href="/contact-me" passHref>
-            <NavLinkWork>contact</NavLinkWork>
+            <NavLinkDark>contact</NavLinkDark>
           </Link>
         </>
       ) : (
@@ -55,7 +55,12 @@ const Logo = styled.a`
   position: fixed;
   font-size: 36px;
   transition: 0.2s ease-in-out;
-  z-index: 100;
+  z-index: 1002;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  top: 15px;
+  left: 65px;
 
   &:hover {
     transform: scale(1.05);
@@ -71,13 +76,9 @@ const Logo = styled.a`
   }
 `;
 
-const LogoWork = styled(Logo)`
+const LogoDark = styled(Logo)`
   color: white;
   background-color: #2f80ed;
-  padding: 10px;
-  border-radius: 5px;
-  top: 15px;
-  left: 65px;
 
   @media (max-width: 550px) {
     font-size: 32px;
@@ -96,7 +97,7 @@ const NavLink = styled.a`
   &:hover {
     background-color: white;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-    color: black;
+    color: #2f80ed;
   }
 
   @media (max-width: 800px) {
@@ -104,6 +105,6 @@ const NavLink = styled.a`
   }
 `;
 
-const NavLinkWork = styled(NavLink)`
+const NavLinkDark = styled(NavLink)`
   color: white;
 `;

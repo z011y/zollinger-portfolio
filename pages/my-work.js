@@ -8,49 +8,19 @@ const MyWork = () => {
   return (
     <Layout>
       <Content>
-        <BackgroundWords>
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work my
-          work my work my work my work my work my work my work my work my work
-          my work my work my work my work my work my work my work my work
-        </BackgroundWords>
+        {/* <BackgroundWords>
+          {
+            "</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>"
+          }
+        </BackgroundWords> */}
         <Title>my work</Title>
 
         <FilterContainer>
           <h1>Tech Stack</h1>
+          <h2>Next.js</h2>
           <h2>React</h2>
           <h2>Redux</h2>
           <h2>Javascript</h2>
-          <h2>Next.js</h2>
           <h2>Node.js</h2>
           <h2>Python</h2>
           <h2>SQL</h2>
@@ -115,37 +85,48 @@ const Content = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #2f80ed;
+  background-color: white;
   position: relative;
 `;
 
-const BackgroundWords = styled.h1`
-  font-size: 72px;
-  color: #4990ef;
-  line-height: 110px;
-  transform: rotate(-180deg);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding-right: 75px;
-  padding-left: 75px;
-  z-index: 1;
-  @media (max-width: 448px) {
-    font-size: 60px;
-    padding-right: 25px;
-  }
-`;
+// const BackgroundWords = styled.h1`
+//   font-size: 72px;
+//   color: #e5effd;
+//   line-height: 110px;
+//   transform: rotate(-180deg);
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   padding-right: 75px;
+//   padding-left: 75px;
+//   z-index: 1;
+//   @media (max-width: 448px) {
+//     font-size: 60px;
+//     padding-right: 25px;
+//   }
+// `;
 
 const Title = styled.h1`
+  width: calc(50% + 140px);
+  background-color: white;
   font-size: 86px;
-  color: white;
-  left: 135px;
-  top: 90px;
-  position: absolute;
-  z-index: 2;
+  color: black;
+  left: 0px;
+  top: 0px;
+  padding-left: 135px;
+  padding-top: 90px;
+  position: fixed;
+  z-index: 1001;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
   @media (max-width: 600px) {
-    left: 75px;
     font-size: 70px;
+    padding-left: 75px;
   }
   @media (max-width: 400px) {
     font-size: 60px;
@@ -155,7 +136,7 @@ const Title = styled.h1`
 const FilterContainer = styled.div`
   width: 300px;
   height: 550px;
-  background: #2f80ed;
+  background: white;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   position: fixed;
@@ -163,7 +144,12 @@ const FilterContainer = styled.div`
   right: 200px;
   z-index: 100;
   padding: 30px;
-  color: white;
+  color: black;
+
+  h2 {
+    font-family: "DM Mono";
+    font-weight: 400;
+  }
 
   @media (max-width: 1200px) {
     right: 50px;

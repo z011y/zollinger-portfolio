@@ -14,8 +14,8 @@ const Socials = () => {
 
   return (
     <>
-      {router.pathname === "/my-work" ? (
-        <SocialsWork>
+      {router.pathname === "/contact-me" ? (
+        <SocialsDark>
           <a href="https://www.linkedin.com/in/cameron-zollinger">
             <Linkedin />
           </a>
@@ -34,7 +34,7 @@ const Socials = () => {
           <a href="https://codepen.io/cameroncharles_">
             <Codepen />
           </a>
-        </SocialsWork>
+        </SocialsDark>
       ) : (
         <SocialsAll>
           <a href="https://www.linkedin.com/in/cameron-zollinger">
@@ -82,15 +82,24 @@ const SocialsAll = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.25s ease-in-out;
   }
 
   svg {
     width: 50%;
   }
+
+  a:hover {
+    color: #2f80ed;
+  }
 `;
 
-const SocialsWork = styled(SocialsAll)`
+const SocialsDark = styled(SocialsAll)`
   a {
     color: white;
+  }
+
+  a:hover {
+    color: black;
   }
 `;

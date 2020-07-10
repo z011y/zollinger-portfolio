@@ -22,8 +22,8 @@ export default Resume;
 //STYLES__________________________
 const ResumeContainer = styled.div`
   &:hover h3 {
-    width: 150px;
-    z-index: -1;
+    width: 150px !important;
+    z-index: 1000 !important;
   }
 `;
 
@@ -36,10 +36,10 @@ const ResumeText = styled.h3`
   right: 50px;
   border-radius: 5px;
   display: flex;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  z-index: -5;
+  z-index: 999;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-left: 20px;
@@ -63,7 +63,7 @@ const ResumeIcon = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 1001;
 
   svg {
     width: 40%;
