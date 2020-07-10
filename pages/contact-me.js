@@ -57,7 +57,7 @@ const Background = styled.h1`
   @media (max-width: 600px) {
     font-size: 60px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 800px) {
     color: #2f80ed;
   }
 `;
