@@ -80,7 +80,7 @@ const Title = styled.h1`
   z-index: 2;
 
   @media (max-width: 600px) {
-    left: 75px;
+    left: 40px;
     font-size: 70px;
   }
   @media (max-width: 400px) {
@@ -111,11 +111,11 @@ const BioContainer = styled.div`
     height: 600px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     height: 100%;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
     width: 100%;
-    padding-left: 75px;
+    padding-left: 40px;
     padding-top: 200px;
   }
 `;
@@ -148,9 +148,9 @@ const BioText = styled.p`
   font-size: 20px;
   line-height: 35px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     font-size: 15px;
     line-height: 30px;
-    padding-right: 30px;
+    width: 100%;
   }
 `;

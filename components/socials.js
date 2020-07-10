@@ -67,7 +67,7 @@ export default Socials;
 const SocialsAll = styled.div`
   position: fixed;
   left: 0;
-  top: 25%;
+  bottom: 25%;
   width: 75px;
   height: 50%;
   align-self: center;
@@ -92,6 +92,16 @@ const SocialsAll = styled.div`
   a:hover {
     color: #2f80ed;
   }
+
+  @media (max-width: 600px) {
+    bottom: 0px;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 `;
 
 const SocialsDark = styled(SocialsAll)`
@@ -101,5 +111,11 @@ const SocialsDark = styled(SocialsAll)`
 
   a:hover {
     color: black;
+  }
+
+  @media (max-width: 600px) {
+    a {
+      color: black;
+    }
   }
 `;

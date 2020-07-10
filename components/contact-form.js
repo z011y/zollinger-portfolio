@@ -142,13 +142,8 @@ const InfoForm = styled.form`
     height: 550px;
   }
   @media (max-width: 600px) {
-    top: 25%;
-  }
-
-  @media (max-width: 500px) {
-    width: 280px;
-    left: 75px;
-    height: 450px;
+    top: 100px;
+    width: 90%;
   }
 `;
 
@@ -230,7 +225,7 @@ const Button = styled.button`
 
 const Result = styled.div`
   height: 40px;
-  width: 500px;
+  width: 100%;
   font-size: 14px;
 `;
 

@@ -126,7 +126,7 @@ const Title = styled.h1`
   }
   @media (max-width: 600px) {
     font-size: 70px;
-    padding-left: 75px;
+    padding-left: 40px;
   }
   @media (max-width: 400px) {
     font-size: 60px;
@@ -174,7 +174,9 @@ const WorkContainer = styled.div`
     width: 75%;
   }
   @media (max-width: 600px) {
-    width: 75%;
-    margin-left: 75px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 0px;
   }
 `;

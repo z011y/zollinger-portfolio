@@ -39,6 +39,11 @@ const Content = styled.div`
   flex-direction: column;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 600px) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 `;
 
 const Background = styled.h1`

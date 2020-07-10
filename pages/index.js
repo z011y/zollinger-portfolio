@@ -13,8 +13,8 @@ export default function Home() {
           zollinger cameron zollinger cameron zollinger
         </BackgroundName>
         <Description>
-          a full stack web developer w/
-          <br />a <Highlight>design-minded</Highlight> approach to development
+          a full stack web developer w/ a <Highlight>design-minded</Highlight>{" "}
+          approach to development
         </Description>
         <Link href="/my-work" passHref>
           <Button>see my work</Button>
@@ -46,7 +46,7 @@ const BackgroundName = styled.h1`
   z-index: -100;
   text-overflow: none;
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     font-size: 150px;
     line-height: 140px;
   }
@@ -70,9 +70,12 @@ const Description = styled.h2`
     font-size: 50px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     font-size: 32px;
-    margin-right: 10px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0px;
   }
 `;
 
@@ -111,10 +114,11 @@ const Button = styled.a`
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     font-size: 24px;
     width: 180px;
     height: 50px;
+    margin-top: 25px;
 
     &::before {
       width: 180px;

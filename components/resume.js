@@ -46,8 +46,8 @@ const ResumeText = styled.h3`
   transition: 0.25s ease-in-out;
   overflow: hidden;
 
-  @media (max-width: 550px) {
-    bottom: 20px;
+  @media (max-width: 600px) {
+    bottom: 100px;
     right: 20px;
   }
 `;
@@ -70,8 +70,8 @@ const ResumeIcon = styled.a`
     color: #2f80ed;
   }
 
-  @media (max-width: 550px) {
-    bottom: 20px;
+  @media (max-width: 600px) {
+    bottom: 100px;
     right: 20px;
   }
 `;
