@@ -102,7 +102,7 @@ const ContactForm = () => {
             </div>
           )}
           {!status.info.error && status.info.msg && (
-            <div className="success" style={{ color: "green" }}>
+            <div className="success" style={{ color: "#2f80ed" }}>
               {"Your email was sent successfully!"}
             </div>
           )}
@@ -144,6 +144,7 @@ const InfoForm = styled.form`
   @media (max-width: 600px) {
     top: 100px;
     width: 90%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0);
   }
 `;
 
@@ -202,8 +203,8 @@ const Textarea = styled.textarea`
 const Button = styled.button`
   font-family: "DM Mono", monospace !important;
   height: 50px;
-  background: #ffffff;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  background: #2f80ed;
+  color: white;
   border-radius: 5px;
   font-size: 18px;
   display: flex;

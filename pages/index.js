@@ -38,7 +38,7 @@ const Content = styled.div`
 
 const BackgroundName = styled.h1`
   color: #e5effd;
-  position: absolute;
+  position: fixed;
   font-size: 300px;
   top: -75px;
   left: 75px;
@@ -47,8 +47,9 @@ const BackgroundName = styled.h1`
   text-overflow: none;
 
   @media (max-width: 600px) {
-    font-size: 150px;
-    line-height: 140px;
+    font-size: 200px;
+    line-height: 160px;
+    left: 40px;
   }
 `;
 
@@ -71,11 +72,12 @@ const Description = styled.h2`
   }
 
   @media (max-width: 600px) {
-    font-size: 32px;
+    font-size: 45px;
     width: 100%;
     padding-right: 40px;
     padding-left: 40px;
     margin: 0px;
+    text-align: center;
   }
 `;
 

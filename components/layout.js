@@ -50,6 +50,11 @@ const Header = styled.header`
   display: flex;
   padding-right: 75px;
   z-index: 1002;
+
+  @media (max-width: 600px) {
+    height: 75px;
+    background-color: white;
+  }
 `;
 
 // const Footer = styled.footer`

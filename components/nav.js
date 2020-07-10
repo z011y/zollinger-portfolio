@@ -9,7 +9,9 @@ const Nav = () => {
     <>
       <Link href="/" passHref>
         {router.pathname === "/contact-me" ? (
-          <LogoDark>:zollinger</LogoDark>
+          <LogoDark>
+            <span>:</span>zollinger
+          </LogoDark>
         ) : (
           <Logo>
             <span>:</span>zollinger
@@ -83,6 +85,12 @@ const LogoDark = styled(Logo)`
   @media (max-width: 600px) {
     font-size: 32px;
     left: 20px;
+    color: black;
+    background-color: white;
+
+    span {
+      color: #2f80ed;
+    }
   }
 `;
 

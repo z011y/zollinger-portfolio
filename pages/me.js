@@ -117,6 +117,7 @@ const BioContainer = styled.div`
     width: 100%;
     padding-left: 40px;
     padding-top: 200px;
+    border-radius: 0px;
   }
 `;
 

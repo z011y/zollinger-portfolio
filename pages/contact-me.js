@@ -59,10 +59,13 @@ const Background = styled.h1`
   z-index: -100;
   overflow: hidden;
 
-  @media (max-width: 600px) {
-    font-size: 60px;
-  }
   @media (max-width: 800px) {
     color: #2f80ed;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 60px;
+    color: white;
+    background-color: white;
   }
 `;
