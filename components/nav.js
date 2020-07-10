@@ -82,6 +82,10 @@ const LogoDark = styled(Logo)`
   color: white;
   background-color: #2f80ed;
 
+  span {
+    color: white;
+  }
+
   @media (max-width: 600px) {
     font-size: 32px;
     left: 20px;
