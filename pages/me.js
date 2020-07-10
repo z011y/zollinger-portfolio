@@ -27,7 +27,10 @@ const Me = () => {
         <LargeCircleTopStyled src="/large-circle.svg" />
         <LargeCircleStyled src="/large-circle.svg" />
         <MeIllustrationStyled src="/me-illustration.svg" />
-        <Title>me</Title>
+        <div>
+          <Title>me</Title>
+          <MobileImg src="/cam-profile-alt.png" />
+        </div>
         <BioContainer>
           <h1>Cameron Zollinger</h1>
           <h2>
@@ -85,6 +88,19 @@ const Title = styled.h1`
   }
   @media (max-width: 400px) {
     font-size: 60px;
+  }
+`;
+
+const MobileImg = styled.img`
+  display: none;
+
+  @media (max-width: 600px) {
+    display: block;
+    width: 75px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 40px;
   }
 `;
 
