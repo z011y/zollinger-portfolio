@@ -65,8 +65,15 @@ const ContactForm = () => {
       <InfoForm onSubmit={handleOnSubmit}>
         <Title>contact me</Title>
         <Subtitle>
-          <b style={{ color: "#2f80ed", fontSize: 20, fontFamily: "DM Sans" }}>
-            I'm available for hire!
+          <b style={{ color: "black", fontSize: 20, fontFamily: "DM Sans" }}>
+            I'm available for hire on{" "}
+            <a
+              href="https://fiverr.com/cameroncharles_"
+              target="blank"
+              style={{ color: "#2f80ed", fontSize: 20, fontFamily: "DM Sans" }}
+            >
+              Fiverr
+            </a>
           </b>
         </Subtitle>
         <Email>

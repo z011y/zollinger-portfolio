@@ -37,7 +37,7 @@ const Content = styled.div`
 `;
 
 const BackgroundName = styled.h1`
-  color: #e5effd;
+  color: #f1f7ff;
   position: fixed;
   font-size: 300px;
   top: -75px;

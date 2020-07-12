@@ -34,7 +34,10 @@ const Me = () => {
         <BioContainer>
           <h1>Cameron Zollinger</h1>
           <h2>
-            Graduate of <span>Bottega Code School</span>
+            Graduate of{" "}
+            <a href="https://bottega.tech" target="blank">
+              Bottega Code School
+            </a>
           </h2>
           <BioText>
             Hi, I'm Cameron Zollinger, a full stack web developer. I'm
@@ -113,7 +116,7 @@ const BioContainer = styled.div`
   padding: 20px;
   border-radius: 5px;
 
-  span {
+  a {
     color: #2f80ed;
   }
 

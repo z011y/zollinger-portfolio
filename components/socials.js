@@ -16,22 +16,25 @@ const Socials = () => {
     <>
       {router.pathname === "/contact-me" ? (
         <SocialsDark>
-          <a href="https://www.linkedin.com/in/cameron-zollinger">
+          <a
+            href="https://www.linkedin.com/in/cameron-zollinger"
+            target="blank"
+          >
             <Linkedin />
           </a>
-          <a href="https://github.com/cameron-charles">
+          <a href="https://github.com/cameron-charles" target="blank">
             <Github />
           </a>
-          <a href="https://www.facebook.com/cameron.zollinger/">
+          <a href="https://www.facebook.com/cameron.zollinger/" target="blank">
             <Facebook />
           </a>
-          <a href="https://www.instagram.com/cameroncharles_/">
+          <a href="https://www.instagram.com/cameroncharles_/" target="blank">
             <Instagram />
           </a>
-          <a href="https://dribbble.com/cameroncharles_">
+          <a href="https://dribbble.com/cameroncharles_" target="blank">
             <Dribbble />
           </a>
-          <a href="https://codepen.io/cameroncharles_">
+          <a href="https://codepen.io/cameroncharles_" target="blank">
             <Codepen />
           </a>
         </SocialsDark>
