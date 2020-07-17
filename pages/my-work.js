@@ -8,11 +8,6 @@ const MyWork = () => {
   return (
     <Layout>
       <Content>
-        {/* <BackgroundWords>
-          {
-            "</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>"
-          }
-        </BackgroundWords> */}
         <Title>my work</Title>
 
         <FilterContainer>
@@ -29,6 +24,20 @@ const MyWork = () => {
 
         <WorkContainer>
           <Project
+            title={"Wedding Site"}
+            link={"https://cameronandnicole.com"}
+            img={"/wedding.png"}
+            description={"My fiance and I's wedding site"}
+            target="blank"
+          />
+          <Project
+            title={"Foodies On Foot"}
+            link={"https://foodiesonfootnv.now.sh"}
+            img={"/foodiesonfoot.png"}
+            description={"A food tour in Napa, California"}
+            target="blank"
+          />
+          <Project
             title={"Saga"}
             link={"https://saga-front-end.vercel.app"}
             img={"/saga.png"}
@@ -39,20 +48,6 @@ const MyWork = () => {
             link={"https://tavern-front-end.vercel.app"}
             img={"/tavern.png"}
             description={"Connecting local artists with local venues"}
-            target="blank"
-          />
-          <Project
-            title={"Wedding Site"}
-            link={"https://cameronandnicole.com"}
-            img={"/wedding.png"}
-            description={"My fiance and I's wedding site"}
-            target="blank"
-          />
-          <Project
-            title={"Foodies On Foot"}
-            link={"https://foodies-on-foot.now.sh"}
-            img={"/foodiesonfoot.png"}
-            description={"A food tour in Napa, California"}
             target="blank"
           />
           <Project
